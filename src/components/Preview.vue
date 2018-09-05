@@ -5,25 +5,26 @@
       v-model="text"
     ></v-text-field>
     <p>value:{{text}}</p>
-    <v-btn 
+    <v-btn
       @click="changeText"
-    >test</v-btn>
+    >test
+    </v-btn>
   </div>
 </template>
 
 <script>
 export default {
-    data () {
-        return {
-            name: 'ashley',
-            text: null
-        }
-    },
-    methods:{
-      changeText() {
-      this.text = "hi bitch"
-      }
+  data () {
+    return {
+      name: 'ashley',
+      text: null
     }
+  },
+  methods: {
+    changeText () {
+      this.text = 'hi bitch'
+    }
+  }
 }
 </script>
 
