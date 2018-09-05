@@ -4,6 +4,10 @@
     <v-text-field
       v-model="text"
     ></v-text-field>
+    <p>value:{{text}}</p>
+    <v-btn 
+      @click="changeText"
+    >test</v-btn>
   </div>
 </template>
 
@@ -14,6 +18,11 @@ export default {
             name: 'ashley',
             text: null
         }
+    },
+    methods:{
+      changeText() {
+      this.text = "hi bitch"
+      }
     }
 }
 </script>
