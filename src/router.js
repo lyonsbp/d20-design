@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Bio from './components/Bio.vue'
 
 Vue.use(Router)
 
@@ -24,7 +25,7 @@ export default new Router({
     {
       path: '/create/bio',
       name: 'bio',
-      component: () => import('./components/Bio.vue')
+      component: Bio
     }
   ]
 })

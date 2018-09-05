@@ -10,33 +10,47 @@
                 label="Character Name"
                 required
         ></v-text-field>
-        <v-subheader
-                v-if="item.header"
-                :key="item.header"
-        >
-           Description
-        </v-subheader>
-            <v-text-field
-                    v-model="gender"
-                    label="Character Name"
-                    required
-            ></v-text-field>
+        <v-text-field
+            v-model="gender"
+            label="Gender"
+            required
+        ></v-text-field>
+        <v-text-field
+                v-model="age"
+                label="Age"
+                required
+        ></v-text-field>
+        <v-text-field
+                v-model="hair"
+                label="Hair"
+                required
+        ></v-text-field>
+        <v-text-field
+                v-model="height"
+                label="Height"
+                required
+        ></v-text-field>
+        <v-text-field
+                v-model="build"
+                label="Build"
+                required
+        ></v-text-field>
+        <v-text-field
+                v-model="eyes"
+                label="Eyes"
+                required
+        ></v-text-field>
 
-        <v-text-field
-                v-model="playerName"
-                label="Player Name"
+        <v-textarea
+                outline
+                v-model="notableFeatures"
+                label="Notable Features"
                 required
-        ></v-text-field>
-        <v-text-field
-                v-model="playerName"
-                label="Player Name"
-                required
-        ></v-text-field>
+        ></v-textarea>
     </v-form>
 </template>
 
 <script>
-    import VTextField from "vuetify/src/components/VTextField/VTextField";
     export default {
         name: "Bio",
       data () {
@@ -55,8 +69,7 @@
               notableFeatures:''
             }
           }
-      },
-      components: {VTextField}
+      }
     }
 </script>
 
