@@ -3,7 +3,7 @@
     <v-navigation-drawer
       persistent
       :mini-variant="miniVariant"
-      :clipped="clipped"
+      clipped
       v-model="drawer"
       enable-resize-watcher
       fixed
@@ -28,7 +28,7 @@
       app
       dark
       color="primary"
-      :clipped-left="clipped"
+      clipped-left
     >
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-btn icon @click.stop="miniVariant = !miniVariant">
