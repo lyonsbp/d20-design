@@ -47,7 +47,9 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <router-view/>
+      <v-container>
+        <router-view/>
+      </v-container>
     </v-content>
     <v-footer :fixed="fixed" app>
       <span>&copy; 2017</span>
